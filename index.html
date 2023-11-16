@@ -19,9 +19,10 @@
 
         <div class="inf">
             <ul>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Quienes Somos</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#hitoServicios">Servicios</a></li>
+                <li><a href="#hitoAlbum">Álbum</a></li>
+                <li><a href="hitoEquipo">Quienes Somos</a></li>
+                <li><a href="hitoContacto">Contacto</a></li>
             </ul>
         </div>
     </div>
@@ -41,10 +42,11 @@
   </header>
 
   <main>
-    <section id="sectPresentacion"> 
+    <div id="hitoServicios"></div>
+    <section> 
       <h2>Nuestros Servicios Fotográficos</h2>
 
-      <article>
+      <article class="anchoEstrecho">
         <h3>TUS FOTÓGRAFOS EN DONOSTIA</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum impedit cupiditate mollitia ducimus consequuntur, molestiae ad, ea et voluptatum corrupti voluptate odit, explicabo atque. Expedita, provident voluptatem. Dicta, ad delectus.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum impedit cupiditate mollitia ducimus consequuntur, molestiae ad, ea et voluptatum corrupti voluptate odit, explicabo atque. Expedita, provident voluptatem. Dicta, ad delectus.</p>
@@ -53,7 +55,7 @@
         </div>
       </article>
 
-      <article>
+      <article class="anchoEstrecho">
         <h3>SOMOS UN EQUIPO DE FOTÓGRAFOS PROFESIONALES EN DONOSTIA</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum impedit cupiditate mollitia ducimus consequuntur, molestiae ad, ea et voluptatum corrupti voluptate odit, explicabo atque. Expedita, provident voluptatem. Dicta, ad delectus.</p>
         <div id="contenedorServicios">
@@ -107,6 +109,21 @@
         </div>
       </article>
     </section>
+
+    <section>
+      <div id="hitoAlbum"></div>
+      <h2>Álbumes fotográficos a medida</h2>
+      <article>
+        <div id="slider"> 
+          <img id="flechaIzd" src="./assets/img/flecha_izd.png" alt="">   
+          <img id="flechaDer" src="./assets/img/flecha_der.png" alt="">   
+          <img id="fotoActiva" orden=1 src="./assets/img/slider1_2560.jpg" alt="">       
+        </div>
+        <h3 class="anchoEstrecho">El mejor álbum fotográfico para recordar los momentos más especiales</h3>
+        <p class="anchoEstrecho">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, ratione. Cum pariatur explicabo labore quis hic, fuga earum itaque consectetur voluptatibus sunt quae, repellat dolorem eos cumque, omnis delectus quibusdam?</p>
+      </article>
+    </section>
+
   </main>
 </body>
 </html>
