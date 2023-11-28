@@ -174,7 +174,7 @@ nav .contenedor .sup{
     justify-content: center;
 
     width: 100%;
-    height: 5vh;
+    height: 20vh;
     max-height: 40px;
 
     background-color: var(--color0);
@@ -191,7 +191,7 @@ nav .contenedor .sup img{
 nav .contenedor .inf{
 
     width: 100%;
-    height: 5vh;
+    height: 20vh;
     max-height: 40px;
 
     display: flex;
@@ -240,6 +240,7 @@ header{
     background-image: url("../img/header_2560.jpg");
 
     transform: translateY(80px);
+
 }
 
 header .contenedor2{
@@ -422,8 +423,7 @@ main #sectPresentacion article #contenedorServicios .contenedor_foto{
 #slider :nth-child(1):hover, #slider :nth-child(2):hover{
     opacity: 1;
 
-    filter: invert(28%) saturate(1495%) hue-rotate(314deg);
-
+    filter:saturate(100%);
     transition: .5s;
 }
 
