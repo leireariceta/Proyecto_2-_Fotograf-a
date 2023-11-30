@@ -1,7 +1,7 @@
 /* DECLARACIÓN VARIABLES */
 var numfotos = 12; /* número total de fotos*/
 var ordenPrincipal, ordenSiguiente;
-var intervalo, temporizador;
+var intervalo;
 var tiempoEspera = 5000;
 /*var numAleatorio*/ 
 
@@ -26,8 +26,7 @@ flechaIzd.addEventListener("click", function(){
 
     fotoActiva.setAttribute("orden", ordenSiguiente)
 
-    clearInterval(intervalo);
-    crearIntervalo();
+    crearIntervalo(tiempoEspera+2000);
 })
 
 flechaDer.addEventListener("click", function(){
@@ -44,8 +43,7 @@ flechaDer.addEventListener("click", function(){
 
     fotoActiva.setAttribute("orden", ordenSiguiente)
 
-    clearInterval(intervalo);
-    crearIntervalo();
+    crearIntervalo(tiempoEspera+2000);
 })
 
 /*ZONA DE EJECUCIÓN DE FOTO RANDOM*/
@@ -69,10 +67,11 @@ funcion_random()
 
 crearIntervalo(tiempoEspera);
 
-function crearIntervalo(){
-
-
-    intervalo = window.setInterval(funcion_random,5000)
+function crearIntervalo(valorRecibido){
+    if(intervalo != undefined){
+        clearInterval(intervalo)
+    }
+    intervalo = window.setInterval(funcion_random,valorRecibido)
 }
 
 

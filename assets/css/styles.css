@@ -427,5 +427,60 @@ main #sectPresentacion article #contenedorServicios .contenedor_foto{
     transition: .5s;
 }
 
+#contenedorEquipo{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    column-gap: 2rem;
+}
+
+.persona{
+    max-width: 350px;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    row-gap: 1rem;
+    
+}
+
+.persona .imagen{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
 
 
+.persona .imagen :nth-child(1){
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.persona .imagen :nth-child(2){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(.7);
+    border-radius: 50%;
+    filter: sepia(1) opacity(.3);
+    transition: 1s;
+}
+
+.persona .imagen :nth-child(1):hover{
+    transform: rotate(40deg);
+} 
+
+.persona .imagen :nth-child(2):hover{
+    filter: sepia(0) opacity(.7);
+    transition: 1s;
+} 
