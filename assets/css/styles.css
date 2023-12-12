@@ -31,6 +31,7 @@
     --color2: #808080;
     --color3: #ffff00;
     --color4: #5dc1b9;
+    --color5: rgb(43, 43, 43); 
 
     --fuente1: "Oswald";
     --fuente2: "Roboto";
@@ -484,3 +485,91 @@ main #sectPresentacion article #contenedorServicios .contenedor_foto{
     filter: sepia(0) opacity(.7);
     transition: 1s;
 } 
+
+/*estilos del footer*/
+footer{
+    width: 100%;
+    background-color: var(--color5);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+
+    color: var(--color0);
+    font-family: var(--fuente3);
+}
+
+#contenedor_footer{
+    width: 100%;
+    max-width: 2560px;
+    row-gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#logo_footer{
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    object-fit: cover;
+}
+
+#contenedor_footer >:nth-child(2){
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#contenedor_footer >:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    row-gap: 1rem;
+}
+
+#contenedor_footer .info_footer{
+    width: 30%;
+    min-width: 300px;
+    height: 300px;
+    background-color: #5dc1b9;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#contenedor_footer .info_footer ul{
+    list-style: none;
+    row-gap: 10px;
+    padding-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#contenedor_footer .info_footer li a{
+    color: var(--color0);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+}
