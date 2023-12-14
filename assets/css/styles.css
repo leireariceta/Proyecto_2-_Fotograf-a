@@ -29,9 +29,9 @@
     --color0: white;
     --color1: #000000;
     --color2: #808080;
-    --color3: #ffff00;
+    --color3: #99385d;
     --color4: #5dc1b9;
-    --color5: rgb(43, 43, 43); 
+    --color5: rgb(41, 41, 41); 
 
     --fuente1: "Oswald";
     --fuente2: "Roboto";
@@ -492,14 +492,16 @@ footer{
     background-color: var(--color5);
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     padding: 2rem;
 
     color: var(--color0);
     font-family: var(--fuente3);
+
+    row-gap: 2rem;
 }
 
 #contenedor_footer{
@@ -542,34 +544,121 @@ footer{
     row-gap: 1rem;
 }
 
-#contenedor_footer .info_footer{
+.info_footer{
     width: 30%;
     min-width: 300px;
     height: 300px;
-    background-color: #5dc1b9;
-
-    padding: 2rem;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
+
+    row-gap: 2rem;
 }
 
 #contenedor_footer .info_footer ul{
     list-style: none;
-    row-gap: 10px;
+    row-gap: 1rem;
     padding-top: 1rem;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
+
+    text-align: left;
 }
 
-#contenedor_footer .info_footer li a{
+#contenedor_footer .info_footer ul li a{
     color: var(--color0);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 100;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    column-gap: 2rem;
+}
+
+#contenedor_footer .info_footer ul .iconos_contacto{
+    width: 20px;
+    filter: invert(1);
+}
+
+#contenedor_footer .info_footer ul a:hover{
+    filter: invert(50%) sepia(33%) saturate(3300%) hue-rotate(300deg) brightness(95%) contrast(60%);
+}
+
+#contenedor_rrss{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    column-gap: 3rem;
+}
+
+#contenedor_rrss img{
+    width: 50px;
+}
+
+footer h2{
+    color: var(--color0);
+}
+
+footer h4{
+    color: var(--color0);
+}
+
+#contenedor_form{
+    width: 100%;
+    max-width: 2560px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    column-gap: 5rem;
+}
+
+#contenedor_form img{
+    width: 300px;
+}
+
+#contenedor_form img:hover{
+    transform: rotate(360deg);
+    transition: 3s;
+}
+
+footer form{
+    width: 40%;
+    min-width: 320px;
+    max-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    row-gap: 0.7rem;
+}
+
+footer form input,textarea{
+    width: 100%;
+}
+
+#boton_enviar{
+    width: 10%;
+    min-width: 160px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
