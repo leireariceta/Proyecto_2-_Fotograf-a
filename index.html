@@ -176,16 +176,18 @@
 
   <footer>
     <div id="contenedor_form">
-      <form action="" method="post">
+      <form action="./php/enviar.php" method="post">
         <h2>Contacta con Nosotros</h2>
-        <input type="text" required name="" id="">
-        <input type="email" name="" id="">
-        <input type="tel" name="" id="">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input class="boton" id="boton_enviar" type="submit" value="Enviar">
+        <input type="text" name="nombre" placeholder="Nombre (mínimo 4 carácteres)">
+        <input type="text" name="correo" placeholder="Correo">
+        <input type="text" name="telefono" placeholder="Teléfono">
+        <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+        <input type="submit" class="boton" id="boton_enviar" value="ENVIAR">
       </form>
       <img src="./assets/img/ICONO_150.png" alt="">
     </div>
+
+    
 
     <div id="contenedor_footer">
       <img id="logo_footer" src="./assets/img/LOGO_500.png" alt="">

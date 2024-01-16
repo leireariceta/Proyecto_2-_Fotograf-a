@@ -777,8 +777,4 @@ textarea{
 #boton_enviar{
     width: 10%;
     min-width: 160px;
-
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
