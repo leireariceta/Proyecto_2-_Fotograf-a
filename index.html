@@ -175,7 +175,7 @@
   </main>
 
   <footer>
-    <div id="contenedor_form">
+    <!-- <div id="contenedor_form">
       <form action="./php/enviar.php" method="post">
         <h2>Contacta con Nosotros</h2>
         <input type="text" name="nombre" placeholder="Nombre (mínimo 4 carácteres)">
@@ -184,8 +184,27 @@
         <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
         <input type="submit" class="boton" id="boton_enviar" value="ENVIAR">
       </form>
-      <img src="./assets/img/ICONO_150.png" alt="">
+      <img src="./assets/img/ICONO_150.png" alt=""> -->
+
+    <!--   <form action="./php/enviar2.php" method="post">
+        <h2>Contacta con Nosotros</h2>
+        <input type="text" name="nombre" placeholder="Nombre (mínimo 4 carácteres)">
+        <input type="text" name="correo" placeholder="Correo">
+        <input type="text" name="telefono" placeholder="Teléfono">
+        <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+        <input type="submit" class="boton" id="boton_enviar" value="ENVIAR">
+      </form> -->
+
+      <form action="./php/enviarPHPMailer.php" method="post">
+        <h2>Contacta con Nosotros</h2>
+        <input type="text" name="nombre" placeholder="Nombre (mínimo 4 carácteres)">
+        <input type="text" name="correo" placeholder="Correo">
+        <input type="text" name="telefono" placeholder="Teléfono">
+        <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+        <input type="submit" class="boton" id="boton_enviar" value="ENVIAR">
+      </form>
     </div>
+    
 
     
 
